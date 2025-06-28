@@ -1,0 +1,49 @@
+// 色
+:root {
+}
+
+// 画面サイズ
+$sz-vw-xs: 511px;
+$sz-vw-sm: 767px;
+$sz-vw-md: 1023px;
+$sz-vw-lg: 1220px;
+$sz-vw-xl: 1599.9px;
+$sz-vw-xxl: 1600px;
+$sz-vw-inner: calc(1600px - 196px * 2);
+
+$sz-breakpoints: (
+  xs: "screen and (max-width: #{$sz-vw-xs})",
+  sm:
+    "screen and (max-width: #{$sz-vw-sm}) and (min-width: calc(#{$sz-vw-xs} + 1px))",
+  md:
+    "screen and (max-width: #{$sz-vw-md}) and (min-width: calc(#{$sz-vw-sm} + 1px))",
+  lg:
+    "screen and (max-width: #{$sz-vw-lg}) and (min-width: calc(#{$sz-vw-md} + 1px))",
+  xl:
+    "screen and (max-width: #{$sz-vw-xl}) and (min-width: calc(#{$sz-vw-lg} + 1px))",
+  xxl: "screen and  (min-width: #{$sz-vw-xxl})",
+);
+
+// ヘッダーの高さ
+$header-height: 80px;
+
+// 重なり順の定義
+$df-layer: (
+  // ローディング
+  loading: 300,
+  // モーダル
+  modal: 100,
+  // ドロワー
+  drawer: 50,
+  // ヘッダー
+  header: 40,
+  // ドロワー表示時に後ろを暗くする
+  drawer_back: 35,
+  // フローティング
+  floating: 30,
+  // pagetop
+  pagetop: 25,
+  // フッター
+  footer: 10,
+  default: 1
+);

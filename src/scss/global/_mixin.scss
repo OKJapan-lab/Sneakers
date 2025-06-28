@@ -1,0 +1,18 @@
+@use "sass:map";
+@use "./valiables" as g;
+
+@mixin mq($breakpointsList...) {
+  $mediaQueryList: ();
+
+  @each $breakpoint in $breakpointsList {
+    $mediaQueryList: append(
+      $mediaQueryList,
+      map.get(g.$sz-breakpoints, $breakpoint),
+      comma
+    );
+  }
+
+  @media #{$mediaQueryList} {
+    @content;
+  }
+}

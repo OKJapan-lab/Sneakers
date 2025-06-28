@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 完成までロボットが探さないようにする -->
+    <meta name="robots" content="noindex" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- SlickのCSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <style></style>
+  </head>
+
+  <body>
+    <div class="l-wrapper">
+      <!-- 横の画面から外をCUT -->
+
+      <section class="l-header">
+        <header class="p-header">
+          <div class="p-header__inner">
+            <h1 class="p-header__logo">
+              <a href="/">
+                <img src="./assets/img/logo.svg" alt="logoマーク" />
+              </a>
+            </h1>
+
+            <div id="js-drawer-icon" class="p-header__burger drawer-icon">
+              <span class="p-header__burger-bar"></span>
+              <span class="p-header__burger-bar"></span>
+              <span class="p-header__burger-bar"></span>
+            </div>
+          </div>
+        </header>
+      </section>
+
+      <!-- ドロワーメニュー -->
+      <div class="l-drawer-content">
+        <div id="js-drawer-content" class="p-drawer-content">
+          <nav class="p-drawer-content__nav">
+            <ul class="p-drawer-content__nav-list">
+              <li class="p-drawer-content__nav-item">
+                <a href="#feature" class="p-drawer-content__nav-link">特長</a>
+              </li>
+              <li class="p-drawer-content__nav-item">
+                <a href="#users" class="p-drawer-content__nav-link">導入実績</a>
+              </li>
+              <li class="p-drawer-content__nav-item">
+                <a href="#flow" class="p-drawer-content__nav-link"
+                  >導入までの流れ</a
+                >
+              </li>
+              <li class="p-drawer-content__nav-item">
+                <a href="#price" class="p-drawer-content__nav-link"
+                  >料金プラン</a
+                >
+              </li>
+              <li class="p-drawer-content__nav-item">
+                <a href="#question" class="p-drawer-content__nav-link"
+                  >よくある質問</a
+                >
+              </li>
+            </ul>
+            <div class="p-drawer-content__nav-cta">
+              <button class="c-button__free">無料でRavekを使ってみる</button>
+              <button class="c-button__dl">資料をダウンロードする</button>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- /primary -->
+      <main id="primary">
+        <!-- First View section -->
+        <section id="firstview" class="l-firstview">
+          <div class="p-firstview">
+            <div class="p-firstview__inner">
+              <div class="p-firstview__contents">
+                <video
+                  src="./assets/mp4/video.mp"
+                  autoplay
+                  muted
+                  playsinline
+                  loop
+                ></video>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Pick Up section -->
+        <section class="l-pickup">
+          <div class="p-pickup">
+            <div class="p-pickup__inner">
+              <h2 class="p-pickup__title c-section__title">PICK UP</h2>
+              <div id="js-slider" class="p-pickup__loopslider c-loopslider">
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup1.jpg"
+                    alt="写真:陳列されているスニーカー"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup2.jpg"
+                    alt="写真:スニーカーを履いてる人の足"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup3.jpg"
+                    alt="写真:スニーカーがたくさん並べられている風景"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup4.jpg"
+                    alt="写真:スニーカーが円形で内向きに並べられている"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup5.jpg"
+                    alt="写真:スニーカーの紐を持ってぶら下げている"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup1.jpg"
+                    alt="写真:陳列されているスニーカー"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup2.jpg"
+                    alt="写真:スニーカーを履いてる人の足"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup3.jpg"
+                    alt="写真:スニーカーがたくさん並べられている風景"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup4.jpg"
+                    alt="写真:スニーカーが円形で内向きに並べられている"
+                  />
+                </div>
+                <div class="c-loopslide">
+                  <img
+                    src="./assets/img/pickup5.jpg"
+                    alt="写真:スニーカーの紐を持ってぶら下げている"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FEATURE section -->
+        <section class="l-feature">
+          <div class="p-feature">
+            <div class="p-feature__inner">
+              <h2 class="p-feature__title c-section__title">FEATURE</h2>
+              <div class="p-feature__items">
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+                <div class="p-feature__item">
+                  <div class="p-feature__img js-fadeUpTrigger"></div>
+                  <div class="p-feature__contents">
+                    <div class="p-feature__category">category</div>
+                    <div class="p-feature__text">
+                      テキストテキストテキストテキストテキストテキストテキストテキスト
+                    </div>
+                    <div class="p-feature__date">XXXX.XX.XX</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="l-contact">
+          <div class="p-contact">
+            <div class="p-contact__inner">
+              <div class="p-contact__title c-section__title">CONTACT</div>
+              <div class="p-contact__container">
+                <div class="p-contact__text">
+                  <div class="p-contact__text-title">
+                    テキストテキストテキスト
+                  </div>
+                  <div class="p-contact__text-1st">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </div>
+                  <div class="p-contact__text-2nd">
+                    テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+                  </div>
+                </div>
+                <div class="p-contact__spacer"></div>
+                <div class="p-contact__forms">
+                  <div class="p-contact__form-wrapper">
+                    <form action="" class="p-contact__form">
+                      <div class="p-contact__form-row">
+                        <div class="p-contact__form-label">
+                          <label for="your-name" class="is-required"
+                            >Name:</label
+                          >
+                        </div>
+                        <div class="p-contact__form-input">
+                          <input id="your-name" type="text" />
+                        </div>
+                      </div>
+                      <div class="p-contact__form-row">
+                        <div class="p-contact__form-label">
+                          <label for="your-mail" class="is-required"
+                            >Mail:</label
+                          >
+                        </div>
+                        <div class="p-contact__form-input">
+                          <input id="your-mail" type="email" />
+                        </div>
+                      </div>
+                      <div class="p-contact__form-row">
+                        <div class="p-contact__form-label">
+                          <label for="your-nessage">Message:</label>
+                        </div>
+                        <div class="p-contact__form-input">
+                          <textarea name="" id="your-nessage"></textarea>
+                        </div>
+                      </div>
+                      <div class="p-contact__form-button">
+                        <button type="submit">SEND</button>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <!-- footer -->
+      <footer class="l-footer">
+        <div class="p-footer">
+          <div class="p-footer_inner"></div>
+          <div class="p-footer__bottom">
+            <small class="p-footer__copyright">© Sneakers</small>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- l-wrapper -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>

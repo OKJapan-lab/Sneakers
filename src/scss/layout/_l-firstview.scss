@@ -1,0 +1,5 @@
+@use "../global" as g;
+.l-firstview {
+  position: relative;
+  z-index: map-get(g.$df-layer, default);
+}

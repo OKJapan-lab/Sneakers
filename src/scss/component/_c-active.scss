@@ -1,0 +1,66 @@
+@use "../global" as g;
+
+.c-active__sp {
+  @include g.mq(lg, xl, xxl) {
+    display: none;
+  }
+}
+
+.c-active__pc {
+  display: none;
+  @include g.mq(lg, xl, xxl) {
+    display: block;
+  }
+}
+
+.c-active__xs-lg {
+  @include g.mq(xl, xxl) {
+    display: none;
+  }
+}
+
+
+.c-active__xs {
+  display: none;
+  @include g.mq(xs) {
+    display: block;
+  }
+}
+
+.c-active__sm {
+  display: none;
+  @include g.mq(sm) {
+    display: block;
+  }
+}
+
+.c-active__md {
+  display: none;
+  @include g.mq(md) {
+    display: block;
+  }
+}
+
+
+.c-active__lg {
+  display: none;
+  @include g.mq(lg) {
+    display: block;
+  }
+}
+
+
+.c-active__xl {
+  display: none;
+  @include g.mq(xl) {
+    display: block;
+  }
+}
+
+.c-active__xxl {
+  display: none;
+  @include g.mq(xxl) {
+    display: block;
+  }
+}
+

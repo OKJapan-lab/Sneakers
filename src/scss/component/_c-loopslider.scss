@@ -1,0 +1,22 @@
+@use "../global" as g;
+
+.c-loopslider {
+  width: 100%;
+}
+
+.c-loopslide {
+  width: 235px;
+  height: 156px;
+  margin: 0 20px;
+  @include g.mq(lg,xl,xxl) {
+    width: 407px;
+    height: 271px;
+    margin: 0 30px;
+  }
+}
+
+
+/* slick-track に一定速度の移動を強制するための調整 */
+.slick-track {
+  will-change: transform;
+}

@@ -1,0 +1,22 @@
+@use "../global" as g;
+
+.js-fadeUpTrigger {
+  // opacityが1のままだと、初めに表示されチラつくのでゼロにする
+  opacity: 0;
+}
+
+.fadeUp {
+  /* アニメーション設定 */
+  animation: fadeUp 1s ease-out forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

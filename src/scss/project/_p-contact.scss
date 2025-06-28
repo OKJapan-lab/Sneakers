@@ -1,0 +1,131 @@
+@use "../global" as g;
+
+.p-contact {
+  padding-top: 80px;
+  padding-bottom: 92px;
+  background-color: #121212;
+  color: #ffffff;
+  @include g.mq(lg, xl, xxl) {
+    padding: 50px 0;
+  }
+}
+
+.p-contact__inner {
+  margin-left: auto;
+  margin-right: auto;
+  //   margin-left: 16px;
+  //   margin-right: 16px;
+  width: min(calc(100% - 16px * 2), 500px);
+  @include g.mq(lg, xl, xxl) {
+    width: min(calc(1600px - 195.5px * 2), calc(100% - 40px));
+  }
+}
+
+.p-contact__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 40.8px; /* 170% */
+  @include g.mq(lg, xl, xxl) {
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 61.2px; /* 170% */
+  }
+}
+
+.p-contact__container {
+  margin-top: 20px;
+  @include g.mq(lg, xl, xxl) {
+    margin-top: 30px;
+    display: flex;
+  }
+}
+
+.p-contact__text {
+  @include g.mq(lg, xl, xxl) {
+    flex: 526;
+  }
+}
+
+.p-contact__text-title {
+  font-size: 14.4px;
+  font-weight: 300;
+  line-height: 24.5px; /* 170.139% */
+}
+
+.p-contact__text-1st {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.p-contact__text-2nd {
+  margin-top: 30px;
+  text-align: left;
+}
+
+.p-contact__spacer {
+  @include g.mq(lg, xl, xxl) {
+    flex: 140;
+  }
+}
+.p-contact__forms {
+  margin-top: 30px;
+  @include g.mq(lg, xl, xxl) {
+    margin-top: 0;
+    flex: 543;
+  }
+}
+
+.p-contact__form-wrapper {
+}
+
+.p-contact__form {
+}
+
+.p-contact__form-row {
+  width: 100%;
+  &:not(:first-child) {
+    margin-top: 20px;
+  }
+}
+
+.p-contact__form-label {
+  label {
+    font-size: 14.4px;
+    font-weight: 300;
+    line-height: 24.5px; /* 170.139% */
+  }
+}
+
+.p-contact__form-input {
+  display: inline-block;
+  width: 100%;
+  input {
+    width: 100%;
+    height: 44px;
+  }
+  textarea {
+    width: 100%;
+    height: 68px;
+  }
+}
+
+.p-contact__form-button {
+  margin-top: 20px;
+  button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(100%, 343px);
+    height: 44px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    font-size: 14.4px;
+    font-weight: 300;
+    line-height: 24.5px; /* 170.139% */
+    text-align: center;
+    @include g.mq(lg,xl,xxl) {
+        width: 200px;
+        margin-left: 0;
+    }
+  }
+}
