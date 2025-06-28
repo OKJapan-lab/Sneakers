@@ -1,6 +1,10 @@
 @use "../global" as g;
 
 .l-drawer-content {
-  position: relative;
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
   z-index: map-get(g.$df-layer, drawer);
 }

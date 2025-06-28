@@ -19,7 +19,8 @@
 // ハンバーガーボタンとドロワー
 jQuery("#js-drawer-icon").on("click", function () {
   jQuery(this).toggleClass("is-checked");
-  jQuery("#js-drawer-content").slideToggle(300);
+  jQuery("#js-drawer-content").toggleClass("is-checked");
+  jQuery("#js-drawer-back").toggleClass("is-checked");
   if (jQuery("#js-drawer-icon").hasClass("is-checked")) {
     // クラスが付いている場合の処理
     // 背景を固定してスクロールさせない
@@ -32,7 +33,8 @@ jQuery("#js-drawer-icon").on("click", function () {
 });
 
 jQuery("#js-drawer-content").on("click", function () {
-  jQuery("#js-drawer-content").slideUp(300);
+  jQuery("#js-drawer-content").removeClass("is-checked");
+  jQuery("#js-drawer-back").removeClass("is-checked");
   jQuery("#js-drawer-icon").removeClass("is-checked");
   document.body.style.overflow = "auto";
 });

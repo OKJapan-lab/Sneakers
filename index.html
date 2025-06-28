@@ -40,15 +40,16 @@
                 <img src="./assets/img/logo.svg" alt="logoマーク" />
               </a>
             </h1>
-
-            <div id="js-drawer-icon" class="p-header__burger drawer-icon">
-              <span class="p-header__burger-bar"></span>
-              <span class="p-header__burger-bar"></span>
-              <span class="p-header__burger-bar"></span>
-            </div>
           </div>
         </header>
       </section>
+
+      <!-- バーガー -->
+      <div id="js-drawer-icon" class="p-burger drawer-icon">
+        <span class="p-burger__bar"></span>
+        <span class="p-burger__bar"></span>
+        <span class="p-burger__bar"></span>
+      </div>
 
       <!-- ドロワーメニュー -->
       <div class="l-drawer-content">
@@ -56,34 +57,30 @@
           <nav class="p-drawer-content__nav">
             <ul class="p-drawer-content__nav-list">
               <li class="p-drawer-content__nav-item">
-                <a href="#feature" class="p-drawer-content__nav-link">特長</a>
+                <a href="#pickup" class="p-drawer-content__nav-link">PICK UP</a>
               </li>
               <li class="p-drawer-content__nav-item">
-                <a href="#users" class="p-drawer-content__nav-link">導入実績</a>
-              </li>
-              <li class="p-drawer-content__nav-item">
-                <a href="#flow" class="p-drawer-content__nav-link"
-                  >導入までの流れ</a
+                <a href="#feature" class="p-drawer-content__nav-link"
+                  >FEATURE</a
                 >
               </li>
               <li class="p-drawer-content__nav-item">
-                <a href="#price" class="p-drawer-content__nav-link"
-                  >料金プラン</a
-                >
-              </li>
-              <li class="p-drawer-content__nav-item">
-                <a href="#question" class="p-drawer-content__nav-link"
-                  >よくある質問</a
+                <a href="#contact" class="p-drawer-content__nav-link"
+                  >CONTACT</a
                 >
               </li>
             </ul>
-            <div class="p-drawer-content__nav-cta">
-              <button class="c-button__free">無料でRavekを使ってみる</button>
-              <button class="c-button__dl">資料をダウンロードする</button>
+            <div class="p-drawer-content__sns">
+              <a href="/">Twitter</a>
+              <a href="/">facebook</a>
+              <a href="/">instagram</a>
             </div>
           </nav>
         </div>
       </div>
+
+      <!-- ドロワーメニュー時の背景 -->
+      <div id="js-drawer-back" class="c-drawer-back"></div>
 
       <!-- /primary -->
       <main id="primary">
@@ -106,7 +103,7 @@
 
         <!-- Pick Up section -->
         <section class="l-pickup">
-          <div class="p-pickup">
+          <div id="pickup" class="p-pickup">
             <div class="p-pickup__inner">
               <h2 class="p-pickup__title c-section__title">PICK UP</h2>
               <div id="js-slider" class="p-pickup__loopslider c-loopslider">
@@ -177,7 +174,7 @@
 
         <!-- FEATURE section -->
         <section class="l-feature">
-          <div class="p-feature">
+          <div id="feature" class="p-feature">
             <div class="p-feature__inner">
               <h2 class="p-feature__title c-section__title">FEATURE</h2>
               <div class="p-feature__items">
@@ -278,7 +275,7 @@
 
         <!-- CONTACT -->
         <section class="l-contact">
-          <div class="p-contact">
+          <div id="contact" class="p-contact">
             <div class="p-contact__inner">
               <div class="p-contact__title c-section__title">CONTACT</div>
               <div class="p-contact__container">
