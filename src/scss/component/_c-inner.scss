@@ -14,3 +14,19 @@
     width: g.$sz-vw-inner;
   }
 }
+
+.c-inner__head-burger {
+  margin-left: 16px;
+  margin-right: 16px;
+  height: inherit;
+  @include g.mq(lg, xl, xxl) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include g.mq(lg, xl) {
+    width: calc(1520px * 100vw / g.$sz-vw-xxl);
+  }
+  @include g.mq(xxl) {
+    width: 1520px;
+  }
+}

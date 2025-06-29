@@ -70,7 +70,7 @@ jQuery(document).ready(function () {
     initialSlide: 2, //1枚目はゼロ
     speed: 2000, // アニメーションの速度（ミリ秒）
     autoplay: true, // 自動再生ON
-    autoplaySpeed: 1000000, // 待機時間なし
+    autoplaySpeed: 0, // 待機時間なし
     cssEase: "linear", // 一定速度
     infinite: true, // 無限ループ
     slidesToShow: 1, // 表示枚数

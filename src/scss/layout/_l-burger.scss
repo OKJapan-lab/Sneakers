@@ -3,8 +3,8 @@
 .l-burger {
   position: fixed;
   top: 0;
-  right: 0;
-  width: 0;
-  height: 0;
+  left: 0;
+  width: 100%;
+  height: g.$header-height;
   z-index: map-get(g.$df-layer, burger);
 }

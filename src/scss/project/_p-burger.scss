@@ -1,68 +1,52 @@
 @use "../global" as g;
 
 .p-burger {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 75px;
-    height: 75px;
-    display: flex;
-    flex-direction: column;
-    @include g.mq(lg, xl, xxl) {
-      width: 100px;
-      height: 100px;
-    }
-  
-    &.is-checked {
-      .p-burger__bar {
-        background-color: #FFFFFF;
-        &:nth-of-type(1) {
-          top: 35.75px;
-          transform: rotate(45deg);
-          @include g.mq(lg, xl, xxl) {
-            top: 48.75px;
-          }
-        }
-        &:nth-of-type(2) {
-          display: none;
-        }
-        &:nth-of-type(3) {
-          top: 35.75px;
-          transform: rotate(-45deg);
-          @include g.mq(lg, xl, xxl) {
-            top: 48.75px;
-          }
-        }
+  width: 100%;
+  height: inherit;
+}
+
+.p-burger__inner {
+}
+
+.p-burger__bars {
+  position: relative;
+  margin-top: 28.5px;
+  margin-left: auto;
+  width: 30px;
+  height: 23px;
+  display: flex;
+  flex-direction: column;
+  &.is-checked {
+    .p-burger__bar {
+      background-color: #ffffff;
+      &:nth-of-type(1) {
+        top: 12.75px;
+        transform: rotate(45deg);
+      }
+      &:nth-of-type(2) {
+        display: none;
+      }
+      &:nth-of-type(3) {
+        top: 12.75px;
+        transform: rotate(-45deg);
       }
     }
   }
-  
- 
-  .p-burger__bar {
-    position: absolute;
-    top: 26px;
-    left: 14px;
-    width: 35px;
-    height: 2px;
-    background-color: #121212;
-    transition: transform 0.3s linear, top 0.3s linear;
-    @include g.mq(lg, xl, xxl) {
-      top: 36px;
-      left: 25px;
-      width: 50px;
-    }
-    width: 50px;
-  
-    &:nth-of-type(2) {
-      top: calc(26px + 11px);
-      @include g.mq(lg, xl, xxl) {
-        top: calc(36px + 14px);
-      }
-    }
-    &:nth-of-type(3) {
-      top: calc(26px + 11px * 2);
-      @include g.mq(lg, xl, xxl) {
-        top: calc(36px + 14px * 2);
-      }
-    }
+}
+
+.p-burger__bar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 2px;
+  background-color: #121212;
+  transition: transform 0.3s linear, top 0.3s linear;
+
+  &:nth-of-type(2) {
+    top: 10px;
   }
+  &:nth-of-type(3) {
+    top: 22px;
+  }
+}
